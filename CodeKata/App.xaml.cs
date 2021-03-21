@@ -1,5 +1,8 @@
 ﻿using System;
+using CodeKata.Services;
+using CodeKata.ViewModels;
 using Xamarin.Forms;
+using CodeKata.Views;
 using Xamarin.Forms.Xaml;
 
 namespace CodeKata
@@ -10,7 +13,8 @@ namespace CodeKata
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPageViewModel viewModel = new MainPageViewModel(new TravelLogStore(), new PageService());
+            MainPage = new NavigationPage(new MainPage(viewModel));
         }
 
         protected override void OnStart()

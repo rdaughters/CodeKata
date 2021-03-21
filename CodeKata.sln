@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeKata.iOS", "CodeKata.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeKata", "CodeKata\CodeKata.csproj", "{BC272A19-C8E1-45A7-A308-B1C0204AD765}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{E7882121-CAA5-4544-921B-0800E75D51F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{BC272A19-C8E1-45A7-A308-B1C0204AD765}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{BC272A19-C8E1-45A7-A308-B1C0204AD765}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{BC272A19-C8E1-45A7-A308-B1C0204AD765}.Release|iPhone.Build.0 = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E7882121-CAA5-4544-921B-0800E75D51F8}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

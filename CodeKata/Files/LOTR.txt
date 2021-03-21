@@ -1,0 +1,20 @@
+﻿Driver Gandalf
+Driver Bilbo
+Driver Aragon
+Driver Frodo
+Driver Sam
+Driver Legolas
+Driver Gimli
+Trip Gandalf 07:15 07:45 17.3
+Trip Gandalf 06:12 06:32 21.8
+Trip Sam 12:01 13:16 42.0
+Trip Sam 12:01 13:16 22.0
+Trip Sam 12:01 13:16 12.0
+Trip Frodo 12:01 13:16 42.0
+Trip Frodo 12:01 13:16 22.0
+Trip Frodo 12:01 13:16 12.0
+Trip Aragon 07:00 08:00 25.4
+Trip Aragon 07:00 08:00 25.4
+Trip Aragon 07:00 08:00 25.4
+Trip Legolas 07:00 07:30 25.4
+Trip Gimli 07:00 07:30 25.4

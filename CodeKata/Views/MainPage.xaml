@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage NavigationPage.HasNavigationBar="False"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CodeKata.MarkupExtensions"
+             x:Class="CodeKata.MainPage"
+             Padding="0, 0, 0, 0">
+
+    <RelativeLayout>
+        <AbsoluteLayout x:Name="Banner"
+                 RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=1}"
+                 RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=0.35}">
+
+            <Image x:Name="BannerImage" Source="{local:EmbeddedImage CodeKata.Images.mountains-1412683_1280.png}" Aspect="Fill"/>
+            <StackLayout HorizontalOptions="Center"
+                         Padding="0, 45, 0, 0"
+                         AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                         AbsoluteLayout.LayoutFlags="All">
+
+                <Label Text="Tim's Terrific" HorizontalOptions="Center" FontSize="45" FontAttributes="Bold" TextColor="#3D3952" TextTransform="Uppercase"/>
+                <Label Text="Travel Tally" HorizontalOptions="Center" FontSize="45" FontAttributes="Bold" TextColor="#3D3952" TextTransform="Uppercase"/>
+            </StackLayout>
+        </AbsoluteLayout>
+
+        <ListView x:Name="TravelLogs"
+                  SeparatorColor="#3D3952"
+                  ItemsSource="{Binding TravelLogs}"
+                  SelectedItem="{Binding SelectedLog, Mode=TwoWay}"
+                  RelativeLayout.WidthConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Width,
+                    Factor=1}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression
+                    Type=RelativeToParent,
+                    Property=Height,
+                    Factor=1}"
+                  RelativeLayout.YConstraint="{ConstraintExpression
+                    Type=RelativeToView,
+                    ElementName=Banner,
+                    Property=Height,
+                    Factor=1,
+                    Constant=20}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </RelativeLayout>
+
+</ContentPage>
